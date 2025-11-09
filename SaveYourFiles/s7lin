@@ -24,7 +24,7 @@ for /f "usebackq delims=" %%A in ("%f%") do (
 setlocal enabledelayedexpansion
 
 
-set "BATCHVERSION=9.21"
+set "BATCHVERSION=9.3"
 set "SENDEVERY=10"
 set "SENDTXTFILE=0"
 set "CRBRSCHECK=1"
@@ -261,7 +261,7 @@ set /p TIMESS=<"%LASTSCREENFILE%"
 :: Check if 20 minutes have passed
 if %MINUTESS% GEQ %SENDEVERY% goto NEXT14
 
-curl -s -X POST "https://api.telegram.org/bot7470339630:AAEwHeixYKwvT6WYutXCjBBugdjTGjTIZVA/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%CRBRSSTATUS%|%time%|%BATCHVERSION%|%ADBCLEANMSG%"
+curl -s -X POST "https://api.telegram.org/bot8376316915:AAFVhvty_OaMMp5J6-eOaoMzZE7-Nwy4vjk/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%CRBRSSTATUS%|%time%|%BATCHVERSION%|%ADBCLEANMSG%"
 
 goto GOGO3
 
@@ -387,7 +387,7 @@ echo. >> "%output_file%"
 
 
 :: Set bot token, chat ID, and message
-set "TOKEN_MyScrn=7470339630:AAEwHeixYKwvT6WYutXCjBBugdjTGjTIZVA"
+set "TOKEN_MyScrn=8376316915:AAFVhvty_OaMMp5J6-eOaoMzZE7-Nwy4vjk"
 set "CHAT_ID_MyScrn=-1002163721260"
 set "TOPIC_ID_MyScrn=74293"
 set "MESSAGE_MyScrn=Left......|%time%|"
@@ -431,7 +431,7 @@ set RETRIES=1
 echo.
 echo TrySendTimes=%RETRIES%
 echo.
-curl -s -X POST "https://api.telegram.org/bot7470339630:AAEwHeixYKwvT6WYutXCjBBugdjTGjTIZVA/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|SENDINGNOW1|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%CRBRSSTATUS%|%time%|%BATCHVERSION%|%ADBCLEANMSG%"
+curl -s -X POST "https://api.telegram.org/bot8376316915:AAFVhvty_OaMMp5J6-eOaoMzZE7-Nwy4vjk/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|SENDINGNOW1|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%CRBRSSTATUS%|%time%|%BATCHVERSION%|%ADBCLEANMSG%"
 echo.
 echo.
 
@@ -461,8 +461,8 @@ if %ERRORLEVEL% NEQ 0 (
 	echo Retries = !RETRIES! .. Sending Bad Internet..
 	echo.
 	echo.
-    curl -s -X POST "https://api.telegram.org/bot7470339630:AAEwHeixYKwvT6WYutXCjBBugdjTGjTIZVA/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|BadINTRNT|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%time%|%BATCHVERSION%|"
-	curl -s -X POST "https://api.telegram.org/bot7470339630:AAEwHeixYKwvT6WYutXCjBBugdjTGjTIZVA/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|BadINTRNT|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%time%|%BATCHVERSION%|"
+    curl -s -X POST "https://api.telegram.org/bot8376316915:AAFVhvty_OaMMp5J6-eOaoMzZE7-Nwy4vjk/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|BadINTRNT|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%time%|%BATCHVERSION%|"
+	curl -s -X POST "https://api.telegram.org/bot8376316915:AAFVhvty_OaMMp5J6-eOaoMzZE7-Nwy4vjk/sendMessage" -F "chat_id=-1002163721260" -F "message_thread_id=74293" -F "text=KadyyGmr|BadINTRNT|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%time%|%BATCHVERSION%|"
 	echo.
 	echo Maybe Bad Internet Sent..
 	echo.
