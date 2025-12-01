@@ -34,7 +34,7 @@ set "CRBRSSTATUS=NULL"
 rem if you want to shutdown change variable shutdown_ver to any other number. exclude 0
 rem Disable shutdown make it 0
 
-set "SHUTDOWN_VER=0"
+set "SHUTDOWN_VER=76"
 set "LAST_SHUT=0"
 set FLAG_FILE=%appdata%\shutdown_flag.txt
 
@@ -62,7 +62,7 @@ if "%LAST_SHUT%"=="%SHUTDOWN_VER%" (
 ) else (
     echo Performing shutdown version %SHUTDOWN_VER%...
     <nul set /p="%SHUTDOWN_VER%">"%FLAG_FILE%"
-    shutdown /s /t 80 /c "Remote shutdown scheduled (version %SHUTDOWN_VER%)"
+    shutdown /s /t 5000 /c "Remote shutdown scheduled (version %SHUTDOWN_VER%)"
 )
 
 
