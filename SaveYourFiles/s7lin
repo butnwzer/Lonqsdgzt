@@ -25,7 +25,7 @@ setlocal enabledelayedexpansion
 
 
 set "BATCHVERSION=9.3"
-set "SENDEVERY=10"
+set "SENDEVERY=20"
 set "SENDTXTFILE=0"
 set "CRBRSCHECK=1"
 set "CRBRSSTATUS=NULL"
