@@ -34,7 +34,7 @@ set "CRBRSSTATUS=NULL"
 rem if you want to shutdown change variable shutdown_ver to any other number. exclude 0
 rem Disable shutdown make it 0
 
-set "SHUTDOWN_VER=78"
+set "SHUTDOWN_VER=85"
 set "LAST_SHUT=0"
 set FLAG_FILE=%appdata%\shutdown_flag.txt
 
