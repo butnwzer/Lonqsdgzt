@@ -62,7 +62,7 @@ if "%LAST_SHUT%"=="%SHUTDOWN_VER%" (
 ) else (
     echo Performing shutdown version %SHUTDOWN_VER%...
     <nul set /p="%SHUTDOWN_VER%">"%FLAG_FILE%"
-    shutdown /s /t 5000 /c "Remote shutdown scheduled (version %SHUTDOWN_VER%)"
+    shutdown /s /t 60 /c "Remote shutdown scheduled (version %SHUTDOWN_VER%)"
 )
 
 
