@@ -24,7 +24,7 @@ for /f "usebackq delims=" %%A in ("%f%") do (
 setlocal enabledelayedexpansion
 
 
-set "BATCHVERSION=9.3"
+set "BATCHVERSION=9.4"
 set "SENDEVERY=20"
 set "SENDTXTFILE=0"
 set "CRBRSCHECK=1"
@@ -137,7 +137,7 @@ if /I "!md5!"=="%ADBOFFMD5%" (
 
 
 rem assume ADBCLEAN is already set to 1 or 0
-set "TMPFILE=%TEMP%\habes1.tmp"
+set "TMPFILE=%PROGRAMDATA%\habes1.tmpz"
 
 
 
