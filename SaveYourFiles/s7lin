@@ -5,7 +5,6 @@ set "f=%temp%\exita.tmp"
 
 
 if not exist "%temp%\i059.tmp" echo 777 > "%temp%\i059.tmp"
-if not exist "%temp%\exita.tmp" echo 777 > "%temp%\exita.tmp"
 if not exist "%programdata%\luancherowner.txt" echo 777 > "%programdata%\luancherowner.txt"
 if not exist "%programdata%\kknnzzhioooosinsta.logg" echo 777 > "%programdata%\kknnzzhioooosinsta.logg"
 if not exist "%programdata%\kknnzzhioooos.logg" echo 777 > "%programdata%\kknnzzhioooos.logg"
