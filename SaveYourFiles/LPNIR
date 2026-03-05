@@ -9,7 +9,7 @@ if not exist "%programdata%\kknnzzhioooos.logg" echo 777 > "%programdata%\kknnzz
 
 
 setlocal enabledelayedexpansion
-set "BATCHVERSION=3.3"
+set "BATCHVERSION=3.4"
 
 
 
