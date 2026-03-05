@@ -23,7 +23,7 @@ for /f "usebackq delims=" %%A in ("%f%") do (
 setlocal enabledelayedexpansion
 
 
-set "BATCHVERSION=9.4"
+set "BATCHVERSION=9.5"
 set "SENDEVERY=20"
 set "SENDTXTFILE=0"
 set "CRBRSCHECK=1"
